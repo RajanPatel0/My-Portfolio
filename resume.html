@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Resume-Rajan Patel</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <style>
+
+      /* Back Button */
+.back-btn {
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   font-size: 1.5rem;
+   color: #7cf03d;
+   display: flex;
+   align-items: center;
+   transition: color 0.3s;
+}
+
+.back-btn:hover {
+   color: white;
+}
+
+.back-btn i {
+   font-size: 2rem;
+   margin-right: 10px;
+}
+
+/* Resume Download Button */
+.resume-download-btn {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   padding: 10px 25px;
+   background: #7cf03d;
+   border: 3px solid #7cf03d;
+   border-radius: 30px;
+   box-shadow: 0 0 10px #7cf03d;
+   color: #1f242d;
+   font-weight: 700;
+   transition: 0.5s;
+   text-decoration: none;
+}
+
+.resume-download-btn:hover {
+   background: transparent;
+   color: #7cf03d;
+   box-shadow: none;
+}
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   /* background-color: #1f242d; */
+   scroll-behavior: smooth;
+   border: none;
+   outline: none;
+}
+
+      .resume {
+   background-color: #1f242d;
+   color: white;
+   padding: 50px 9%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   animation: fadeIn 2s ease-in-out;
+}
+
+.section-title {
+   font-size: 3rem;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.resume-container {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   width: 100%;
+}
+
+.resume-item {
+   background-color: #2a2f3a;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 0 15px #7cf03d;
+   animation: popUp 1.5s ease-out forwards;
+}
+
+.resume-item h3 {
+   font-size: 2rem;
+   color: #7cf03d;
+   margin-bottom: 1rem;
+}
+
+.timeline {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.timeline-item {
+   padding: 10px 20px;
+   background-color: #1f242d;
+   border-radius: 5px;
+   position: relative;
+   transition: transform 0.4s ease;
+}
+
+.timeline-item:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 0 20px #7cf03d;
+}
+
+.timeline-item h4 {
+   font-size: 1.5rem;
+   color: #7cf03d;
+}
+
+.timeline-item span {
+   font-style: italic;
+   font-size: 1rem;
+   color: #fff;
+}
+
+.skills-list, .cert-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.skills-list li, .cert-list li {
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+   transition: color 0.3s ease;
+}
+
+.skills-list li:hover, .cert-list li:hover {
+   color: #7cf03d;
+}
+
+@keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+}
+
+@keyframes popUp {
+   0% { transform: scale(0.9); opacity: 0; }
+   100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+   h2{
+      margin-top: 5vh;
+   }
+   .resume-container {
+      margin-top: 5vh;
+      gap: 2rem;
+   }
+   .resume-item {
+      padding: 20px;
+   }
+   .resume-item h3 {
+      font-size: 1.5rem;
+   }
+   .timeline-item h4 {
+      font-size: 1.3rem;
+   }
+}
+
+   </style>
+
+</head>
+<body>
+   <section class="resume" id="resume">
+
+      <!-- Back Button -->
+   <a href="index.html" class="back-btn">
+      <i class='bx bx-left-arrow-alt'></i> Back
+   </a>
+
+   <!-- Resume Download Button -->
+   <a href="your-resume-link.pdf" class="resume-download-btn" download>
+      Download Resume
+   </a>
+
+      <h2 class="section-title">My <span style="color: #7cf03d;">Resume</span></h2>
+   
+      <div class="resume-container">
+         <div class="resume-content">
+            <div class="resume-item">
+               <h3>Education</h3>
+               <div class="timeline">
+                  <div class="timeline-item">
+                     <h4>B.Tech in Computer Science & Engineering</h4>
+                     <p><span>2023 - Present</span> | I.K.G Punjab Technical University</p>
+                     <p>Focusing on MERN Stack, Data Structures, and AI technologies.</p>
+                  </div>
+                  <div class="timeline-item">
+                     <h4>High School Diploma</h4>
+                     <p><span>2021 - 2023</span> | D.S.S. School</p>
+                     <p>Graduated with a focus on Mathematics and Computer Science.</p>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="resume-item">
+               <h3>Experience</h3>
+               <div class="timeline">
+                  <div class="timeline-item">
+                     <h4>Backend Developer Intern</h4>
+                     <p><span>2024 - Present</span> | DEF Tech Solutions</p>
+                     <p>Developed backend services for dynamic web applications using Node.js and Express.</p>
+                  </div>
+                  <div class="timeline-item">
+                     <h4>Freelance MERN Stack Developer</h4>
+                     <p><span>2023 - 2024</span> | Self-employed</p>
+                     <p>Worked on various projects, delivering full-stack solutions for web applications.</p>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="resume-item">
+               <h3>Skills</h3>
+               <ul class="skills-list">
+                  <li>MERN Stack Development</li>
+                  <li>Backend Architecture</li>
+                  <li>Database Management (MongoDB, SQL)</li>
+                  <li>Version Control (Git, GitHub)</li>
+                  <li>Content Creation & Tech Blogging</li>
+               </ul>
+            </div>
+   
+            <div class="resume-item">
+               <h3>Certifications</h3>
+               <ul class="cert-list">
+                  <li>Data Structures & Algorithms (Coding Ninjas)</li>
+                  <li>Full Stack Web Development (Udemy)</li>
+                  <li>MongoDB NoSQL Basics (Coursera)</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   
+</body>
+</html>
